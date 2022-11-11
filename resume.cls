@@ -23,6 +23,7 @@
 \LoadClass[12pt,letterpaper]{article} % Font size and paper type
 
 \usepackage[parfill]{parskip}       % Remove paragraph indentation
+\usepackage{fontawesome}
 \usepackage{array}                  % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen}                 % Required for ifthenelse statements
 \usepackage[T2A]{fontenc}			% кодировка
@@ -32,7 +33,7 @@
 \usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
 
 \hypersetup{
-    colorlinks=true,
+    % colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,      
     urlcolor=blue,
@@ -79,7 +80,8 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
+    % \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
+    \hfil{{\namesize\bf \@name}}\hfil
     \nameskip\break
   \endgroup
 }
